@@ -12,16 +12,16 @@ public class Test02 {
         Beauty proxy = (Beauty) Proxy.newProxyInstance(xiaoMan.getClass().getClassLoader(), xiaoMan.getClass().getInterfaces(), new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                Object invoke = null;
+                Object result = null;
                 if("eat".equals(method.getName())) {
                     System.out.println("吃饭之前的准备");
-                    invoke = method.invoke(xiaoMan);
+                    result = method.invoke(xiaoMan);
                     System.out.println("吃饭之后的结果");
                 } else if("gift".equals(method.getName())) {
-                    invoke = method.invoke(xiaoMan, (int)args[0]/2);
+                    result = method.invoke(xiaoMan, (int)args[0]/2);
                 }
 
-                return invoke;
+                return result;
             }
         });
 
