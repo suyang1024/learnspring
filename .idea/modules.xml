@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_pattern/00_pattern.iml" filepath="$PROJECT_DIR$/00_pattern/00_pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_01_firstspring/_01_firstspring.iml" filepath="$PROJECT_DIR$/_01_firstspring/_01_firstspring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_02_bean/_02_bean.iml" filepath="$PROJECT_DIR$/_02_bean/_02_bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_03_DI/_03_DI.iml" filepath="$PROJECT_DIR$/_03_DI/_03_DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_04_DI_annotation/_04_DI_annotation.iml" filepath="$PROJECT_DIR$/_04_DI_annotation/_04_DI_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnspring.iml" filepath="$PROJECT_DIR$/learnspring.iml" />
+    </modules>
+  </component>
+</project>

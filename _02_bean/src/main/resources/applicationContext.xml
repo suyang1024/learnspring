@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--实例工厂-->
+    <!--<bean id="beanFactory" class="com.monkey1024.factory.MyBeanFactory"/>
+    <bean id="studentService" factory-bean="beanFactory" factory-method="createStudentService"/>-->
+
+    <!--静态工厂-->
+    <!--<bean id="studentService" class="com.monkey1024.factory.MyBeanStaticFactory" factory-method="createStudentService"/>-->
+
+    <!--默认方式-->
+    <bean id="studentService" scope="singleton" init-method="init" destroy-method="destory" class="com.monkey1024.service.impl.StudentServiceImpl"/>
+
+    <!--<bean id="myBeanPostProcessor" class="com.monkey1024.proxy.MyBeanPostProcessor"/>-->
+</beans>
